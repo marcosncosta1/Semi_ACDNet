@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Data
+data/raw/
+data/processed/
+*.dcm
+*.nii.gz
+data/train/train_640geo
+data/test/test_640geo
+results/deeplesion_demo
+results/deeplesion_multi
+results/deeplesion_pretrained_model
+save_results
+clinic_metal_results
+clinic_metal_results_copy_mode
+clinic_metal_visualizations_bonemask
+clinic_metal_visualizations_copy_mode_metal_results
+clinic_metal_visualizations_copy_mode_v2
+
+# Models
+models/*.pth
+models/*.h5
+models/*.pt
+models_default_mask/
+# Logs
+logs/
+outputs/
+
+# Environments
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+astra-toolbox/
+odl/
