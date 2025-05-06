@@ -12,7 +12,7 @@ import glob
 from PIL import Image # Only needed if saving as PNG
 
 # --- Argument Parsing ---
-parser = argparse.ArgumentParser(description="ACDNet_Generate_Xp_v2")
+parser = argparse.ArgumentParser(description="ACDNet_Generate_Xp")
 # Model loading arguments
 parser.add_argument("--model_dir", type=str, default="models/ACDNet_latest.pt", help='path to trained ACDNet model file')
 parser.add_argument('--N', type=int, default=6, help='the number of feature maps')

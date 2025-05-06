@@ -21,13 +21,13 @@ LR_D = 1e-4 # Learning rate for discriminator (SemiMAR paper: 0.0001)
 BETAS = (0.5, 0.999) # Adam optimizer betas (SemiMAR paper uses these)
 EPOCHS = 60 # SemiMAR paper uses 60
 LR_DECAY_EPOCH = 20 # SemiMAR paper halves every 20 epochs
-BATCH_SIZE = 16 # User specified
+BATCH_SIZE = 8 # User specified
 NUM_WORKERS = 14 # User specified
 
 # --- Data Paths (User Specified) ---
 DATA_DIR_XP = '/home/mcosta/PycharmProjects/Semi_ACDNet/clinic_metal_results_copy_mode/' # Directory with Xp .npy files
-DATA_DIR_LOW = 'data/test/CTPelvic1K_METAL/' # Directory with corresponding Xlow .nii.gz files
-DATA_DIR_HIGH = 'data/test/CTPelvic1K_METAL_FREE/' # Directory with unpaired Xhigh .nii.gz files
+DATA_DIR_LOW = 'data/train/CTPelvic1K_METAL/'  # Directory with corresponding Xlow .nii.gz files
+DATA_DIR_HIGH = 'data/train/CTPelvic1K_METAL_FREE/'  # Directory with unpaired Xhigh .nii.gz files
 # --- End Data Paths ---
 CHECKPOINT_DIR = './checkpoints_semimar'
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")

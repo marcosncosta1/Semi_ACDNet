@@ -18,6 +18,9 @@ clinic_metal_results_copy_mode
 clinic_metal_visualizations_bonemask
 clinic_metal_visualizations_copy_mode_metal_results
 clinic_metal_visualizations_copy_mode_v2
+semimar_clinical_results
+semimar_visualizations
+
 
 # Models
 models/*.pth
